@@ -25,7 +25,6 @@
     import { showModal } from 'svelte-native'
     import { Template } from 'svelte-native/components'
     import Summary from './Summary.svelte'
-    import ModalFrame from './ModalFrame.svelte'
     import Article from './Article.svelte'
 
     let items = [];
@@ -50,7 +49,7 @@
     }
 
     function show_article(item, show_comments) {
-        showModal({ page: ModalFrame, props: { page: Article,  props: { item: item, showComments: show_comments} }, fullscreen: true});
+        showModal({ page: Article,  props: { item: item, showComments: show_comments} , fullscreen: true});
     }
 
     function on_show_comments(e) {
