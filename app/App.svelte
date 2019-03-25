@@ -22,8 +22,11 @@
 
 <script>
     import { onMount } from 'svelte'
+    import { showModal } from 'svelte-native'
     import { Template } from 'svelte-native/components'
     import Summary from './Summary.svelte'
+    import ModalFrame from './ModalFrame.svelte'
+    import Article from './Article.svelte'
 
     let items = [];
     let page = 1;
@@ -46,12 +49,16 @@
         items = items.concat(await loadPage(page));
     }
 
+    function show_article(item, show_comments) {
+        showModal({ page: ModalFrame, props: { page: Article,  props: { item: item, showComments: show_comments} }, fullscreen: true});
+    }
+
     function on_show_comments(e) {
-        console.log('got show comment',e)
+        show_article(e.detail.item, true)
     }
 
     function on_show_article(e) {
-        console.log('got show article', items[e.index])
+        show_article(items[e.index], false)
     }
 
     onMount(refresh);
