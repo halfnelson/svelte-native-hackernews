@@ -14,7 +14,7 @@
     <page>
         <actionBar class="{showComments ? 'comments' : ''}" >
             {#if isIOS }
-                <actionItem icon="~/chevron-left-dark.png" ios.position="left" on:tap="{closeModal}" />
+                <actionItem icon="res://chevron_left_dark" ios.position="left" on:tap="{closeModal}" />
             {:else}
                 <navigationButton icon="res://chevron_left_dark" on:tap="{closeModal}"></navigationButton>
             {/if}
@@ -24,8 +24,8 @@
                     on:tap="{toggle_comments}"></label>
             </stackLayout>
 
-            <actionItem icon="~/message-square-dark.png" visibility="{ showComments ? 'collapse' : 'visible' }" />
-            <actionItem icon="~/file-dark.png" visibility="{ showComments ? 'visible' : 'collapse' }" />
+            <actionItem icon="res://message_square" visibility="{ showComments ? 'collapse' : 'visible' }" />
+            <actionItem icon="res://file" visibility="{ showComments ? 'visible' : 'collapse' }" />
 
         </actionBar>
         {#if showComments}
