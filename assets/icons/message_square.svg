@@ -18,7 +18,7 @@
    class="feather feather-message-square"
    version="1.1"
    id="svg4"
-   sodipodi:docname="message-square.svg"
+   sodipodi:docname="message_square.svg"
    inkscape:export-filename="C:\dev\nativescript\svelte-native-hackernews\app\message-square-dark.png"
    inkscape:export-xdpi="2048"
    inkscape:export-ydpi="2048"
@@ -50,15 +50,15 @@
      id="namedview6"
      showgrid="false"
      inkscape:zoom="19.666667"
-     inkscape:cx="8.3334149"
+     inkscape:cx="-0.56489003"
      inkscape:cy="11.924318"
      inkscape:window-x="176"
      inkscape:window-y="205"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg4" />
   <path
-     d="m 20.583066,14.894917 a 1.907348,1.9299463 0 0 1 -1.907348,1.929946 H 7.2316299 l -3.814696,3.859893 V 5.2451856 A 1.907348,1.9299463 0 0 1 5.3242819,3.3152393 H 18.675718 a 1.907348,1.9299463 0 0 1 1.907348,1.9299463 z"
+     d="m 19.625172,15.034661 a 1.688833,1.7088423 0 0 1 -1.688833,1.708842 H 7.8033411 l -3.377666,3.417685 V 6.49045 A 1.688833,1.7088423 0 0 1 6.1145081,4.7816077 H 17.936339 A 1.688833,1.7088423 0 0 1 19.625172,6.49045 Z"
      id="path2"
-     style="stroke:#000000;stroke-width:1.91861391;stroke-opacity:0.32941177;"
+     style="stroke:#000000;stroke-width:1.69880819;stroke-opacity:0.32941176"
      inkscape:connector-curvature="0" />
 </svg>

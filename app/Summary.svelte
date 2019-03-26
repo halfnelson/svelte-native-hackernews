@@ -1,5 +1,6 @@
 <script>
     import { createEventDispatcher } from 'svelte'
+
     export let item;
     
     let dispatch = createEventDispatcher();
@@ -13,7 +14,7 @@
 
 <gridLayout columns="*, 50" rows="*">
     <stackLayout col="0" row="0" class="post-detail-section">
-        <label class="post-title" textWrap="{true}">{item.title}</label>
+        <label class="post-title" textWrap="{true}" text="{item.title}"></label>
         <stackLayout orientation="horizontal" class="domain-row">
             <label class="post-rank">{item.points}</label>
             <label class="post-domain">{item.domain}</label>

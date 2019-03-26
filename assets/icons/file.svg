@@ -31,7 +31,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -46,18 +46,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      id="namedview5062"
      showgrid="false"
      inkscape:snap-nodes="false"
      inkscape:snap-global="false"
      inkscape:pagecheckerboard="false"
      inkscape:zoom="9.8333333"
-     inkscape:cx="-0.66101695"
+     inkscape:cx="-18.457627"
      inkscape:cy="12"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-y="56"
      inkscape:window-maximized="1"
      inkscape:current-layer="g5614" />
   <g
@@ -69,8 +69,8 @@
      inkscape:export-ydpi="2048">
     <path
        id="polyline5058"
-       style="stroke:#000000;stroke-width:2.37276101;stroke-opacity:0.32941177"
-       d="M 13.22031,0.59161429 V 8.6549319 h 8.553233 M 13.22031,0.59161429 H 4.6670778 A 2.4437807,2.1376461 0 0 0 2.2232971,2.7292604 V 19.830429 a 2.4437807,2.1376461 0 0 0 2.4437807,2.137646 H 19.329762 a 2.4437807,2.1376461 0 0 0 2.443781,-2.137646 V 8.0733755 Z"
+       style="stroke:#000000;stroke-width:1.93275177;stroke-opacity:0.32941176"
+       d="m 12.769256,2.4526395 v 6.5680408 h 6.967105 M 12.769256,2.4526395 H 5.8021504 A 1.9906014,1.741237 0 0 0 3.811549,4.1938765 V 18.123772 a 1.9906014,1.741237 0 0 0 1.9906014,1.741237 H 17.745759 a 1.9906014,1.741237 0 0 0 1.990602,-1.741237 V 8.5469688 Z"
        inkscape:export-filename="C:\dev\nativescript\svelte-native-hackernews\app\polyline5058.png"
        inkscape:export-xdpi="2048"
        inkscape:export-ydpi="2048"

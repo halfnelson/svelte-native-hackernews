@@ -3,7 +3,9 @@
     <gridLayout rows="auto, *">
         <listView row="0" items="{items}" on:loadMoreItems={loadNextPage} height="100%" on:itemTap={on_show_article}>
             <Template let:item>
-                <Summary item={item} on:showcomments={on_show_comments}></Summary>
+                <stackLayout>
+                    <Summary {item} on:showcomments={on_show_comments}></Summary>
+                </stackLayout>
             </Template>
         </listView>
         <activityIndicator row="0" busy="{loading}" />
@@ -49,7 +51,7 @@
     }
 
     function show_article(item, show_comments) {
-        showModal({ page: Article,  props: { item: item, showComments: show_comments} , fullscreen: true});
+        showModal({ page: Article,  props: { item_summary: item, showComments: show_comments} , fullscreen: true});
     }
 
     function on_show_comments(e) {
