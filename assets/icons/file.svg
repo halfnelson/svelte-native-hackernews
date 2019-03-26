@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   stroke="currentColor"
+   stroke-width="2"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   class="feather feather-file"
+   version="1.1"
+   id="svg5060"
+   sodipodi:docname="file.svg"
+   inkscape:export-filename="C:\dev\nativescript\svelte-native-hackernews\app\file-dark.png"
+   inkscape:export-xdpi="2048"
+   inkscape:export-ydpi="2048"
+   inkscape:version="0.92.0 r15299">
+  <metadata
+     id="metadata5066">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5064" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     id="namedview5062"
+     showgrid="false"
+     inkscape:snap-nodes="false"
+     inkscape:snap-global="false"
+     inkscape:pagecheckerboard="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-0.66101695"
+     inkscape:cy="12"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g5614" />
+  <g
+     id="g5614"
+     transform="matrix(0.6748705,0,0,0.82950005,3.9098413,2.630547)"
+     style="stroke:#000000;stroke-opacity:0.75686276"
+     inkscape:export-filename="C:\dev\nativescript\svelte-native-hackernews\app\file-dark.png"
+     inkscape:export-xdpi="2048"
+     inkscape:export-ydpi="2048">
+    <path
+       id="polyline5058"
+       style="stroke:#000000;stroke-width:2.37276101;stroke-opacity:0.32941177"
+       d="M 13.22031,0.59161429 V 8.6549319 h 8.553233 M 13.22031,0.59161429 H 4.6670778 A 2.4437807,2.1376461 0 0 0 2.2232971,2.7292604 V 19.830429 a 2.4437807,2.1376461 0 0 0 2.4437807,2.137646 H 19.329762 a 2.4437807,2.1376461 0 0 0 2.443781,-2.137646 V 8.0733755 Z"
+       inkscape:export-filename="C:\dev\nativescript\svelte-native-hackernews\app\polyline5058.png"
+       inkscape:export-xdpi="2048"
+       inkscape:export-ydpi="2048"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
