@@ -22,9 +22,7 @@
     function *all_comments(comment_tree) {
         for (let comment of comment_tree) {
             yield comment;
-            console.log('comment had '+comment.comments.length +' child comments');
             if (comment.comments && !comment.collapsed) {
-                console.log('recursing')
                 yield *all_comments(comment.comments);
             }
         }
@@ -35,7 +33,6 @@
     }
 
     function collapse_comment(comment) {
-        console.log("collapsing",comment);
         comment.collapsed = !comment.collapsed;
         apply_comments(item_detail.comments);
     }
@@ -78,41 +75,36 @@
             <stackLayout orientation="horizontal">
                 <label class="actiontitle {showComments ? 'comments' : ''}" text="{(showComments ? 'Comments' : 'Article')}"
                     on:tap="{toggle_comments}" ></label>
-                
             </stackLayout>
+
             <actionItem icon="res://message_square" visibility="{ showComments ? 'collapse' : 'visible' }" on:tap={toggle_comments} />
             <actionItem icon="res://file" visibility="{ showComments ? 'visible' : 'collapse' }" on:tap={toggle_comments} />
-
         </actionBar>
-        
-            {#if showComments}
-            <gridLayout>
-                <listView row="0" col="0" items="{comments}">
-                    <Template let:item>
-                        <stackLayout orientation="horizontal" >
-                            {#each range(item.level) as depth}
-                                <label width="10" class="thread-level" style="opacity: { (Math.max(0.1, 0.5 - (depth * 0.075))).toString() }"></label>
-                            {/each}
-                            <stackLayout class="p-10">
-                                <stackLayout orientation="horizontal">
-                                    <label class="comment-user" text="{item.user}" /><label class="comment-ago" text="{item.time_ago}" />
-                                </stackLayout>
-                                <htmlView html="{clean_content(item.content)}" on:tap="{() => collapse_comment(item)}"></htmlView>
+        <gridLayout>
+        {#if showComments}
+            <listView row="0" col="0" items="{comments}">
+                <Template let:item>
+                    <stackLayout orientation="horizontal" >
+                        {#each range(item.level) as depth}
+                            <label width="10" class="thread-level" style="opacity: { (Math.max(0.1, 0.5 - (depth * 0.075))).toString() }"></label>
+                        {/each}
+                        <stackLayout class="p-10">
+                            <stackLayout orientation="horizontal">
+                                <label class="comment-user" text="{item.user}" /><label class="comment-ago" text="{item.time_ago}" />
                             </stackLayout>
+                            <htmlView html="{clean_content(item.content)}" on:tap="{() => collapse_comment(item)}"></htmlView>
                         </stackLayout>
-                    </Template>
-                </listView>
-            </gridLayout>
-               <!-- <activityIndicator busy="{loading}"  verticalAlignment="top" horizontalAlignment="right" visibility="{ loading ? 'visible' : 'collapse' }"></activityIndicator> -->
-            {:else}
-            <gridLayout>
-                <webView row="0" col="0" src="{item_summary.url}"  bind:this="{webView}"  on:loadStarted="{()=>loading=true}" on:loadFinished="{web_finished}"></webView>
-                <activityIndicator busy="{loading}" verticalAlignment="top" horizontalAlignment="right" visibility="{ loading ? 'visible' : 'collapse' }"></activityIndicator>
-            </gridLayout>
-            {/if}
-       
-</page>
+                    </stackLayout>
+                </Template>
+            </listView>
+        {:else}
+            <webView row="0" col="0" src="{item_summary.url}"  bind:this="{webView}"  on:loadStarted="{()=>loading=true}" on:loadFinished="{web_finished}"></webView>
+        {/if}
+        <activityIndicator busy="{loading}" verticalAlignment="top" horizontalAlignment="right" visibility="{ loading ? 'visible' : 'collapse' }"></activityIndicator>
+        </gridLayout>
+    </page>
 </frame>
+
 <style>
     actionBar {
         background-color: #dddddd;
@@ -159,6 +151,4 @@
     listView {
         background-color: #f6f6ef;
     }
-    
-    
 </style>
