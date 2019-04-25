@@ -67,9 +67,9 @@
     <page>
         <actionBar class="{showComments ? 'comments' : ''}" >
             {#if isIOS }
-                <actionItem icon="res://chevron_left_dark" ios.position="left" on:tap="{closeModal}" />
+                <actionItem icon="res://chevron_left" ios.position="left" on:tap="{closeModal}" />
             {:else}
-                <navigationButton icon="res://chevron_left_dark" on:tap="{closeModal}"></navigationButton>
+                <navigationButton icon="res://chevron_left" on:tap="{closeModal}"></navigationButton>
             {/if}
 
             <stackLayout orientation="horizontal">

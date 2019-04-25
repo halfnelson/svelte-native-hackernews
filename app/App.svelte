@@ -8,7 +8,7 @@
                 </stackLayout>
             </Template>
         </listView>
-        <activityIndicator row="0" busy="{loading}" />
+        <activityIndicator row="0" busy="{loading}" verticalAlignment="bottom" horizontalAlignment="right" visibility="{ loading ? 'visible' : 'collapse' }"></activityIndicator>
     </gridLayout>
 </page>
 <style>
@@ -20,6 +20,14 @@
         background-color: #f6f6ef;
         color: #828282;
     }
+    activityIndicator {
+        width: 24;
+        height: 24;
+        color: black;
+        opacity: 0.2;
+        margin: 10;
+    }
+
 </style>
 
 <script>
